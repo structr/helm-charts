@@ -12,7 +12,7 @@ bin/build.sh
 
 ## Add a New Chart
 
-To add a new helm chart, create a new folder in this repository and add a new line in `bin/build.sh`.
+To add a new helm chart, create a new folder in this repository and add a "helm package" line for your folder in `bin/build.sh`.
 
 ## Publish The Charts
 
