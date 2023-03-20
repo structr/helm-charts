@@ -1,0 +1,24 @@
+structr:
+
+  memory:
+    min: 1g
+    max: 4g
+
+  filesvolume:
+    storageClassName: "standard"
+    size: 2Gi
+
+  config:
+    database: 
+      url: "bolt://neo4j:7687"
+      username: "neo4j"
+    # Add custom config entries here
+    custom: [
+      # Allow Structr apps to be auto-migrated across  multiple versions
+      "application.schema.automigration = true",
+      # Explicitly enable MetricsServlet for Prometheus scraping
+      "httpservice.servlets = JsonRestServlet HtmlServlet WebSocketServlet CsvServlet UploadServlet ProxyServlet GraphQLServlet DeploymentServlet LoginServlet LogoutServlet TokenServlet HealthCheckServlet HistogramServlet OpenAPIServlet FlowServlet MetricsServlet"
+    ]
+
+  # Enter valid license or "" for community edition
+  license: ""

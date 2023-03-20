@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ .Release.Name }}-files
+spec:
+  accessModes: [ "ReadWriteMany" ]
+  storageClassName: {{ .Values.structr.filesvolume.storageClassName }}
+  resources:
+    requests:
+      storage: 1Gi

@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-memory-config
+data:
+  memory.config: |
+    -Xms{{ .Values.structr.memory.min | default "1g" }} -Xmx{{ .Values.structr.memory.max | default "4g" }}

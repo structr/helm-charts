@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-structr-conf
+data:
+  structr.conf: |
+    superuser.password = {{ required "structr.config.superuserPassword is required" .Values.structr.config.superuserPassword }}
+    setup.wizard.completed = true
+    application.cluster.enabled = true
+    application.schema.automigration = true
+    application.http.port = 80
+    database.available.connections = neo4j
+    neo4j.database.driver = org.structr.bolt.BoltDatabaseService
+    neo4j.database.connection.name = neo4j
+    neo4j.database.connection.url = {{ required "structr.config.database.url is required" .Values.structr.config.database.url }} 
+    neo4j.database.connection.username = {{ required "structr.config.database.username is required" .Values.structr.config.database.username }} 
+    neo4j.database.connection.password = {{ required "structr.config.database.password is required" .Values.structr.config.database.password }} 
+    nodeservice.active = neo4j
+    {{ if .Values.structr.config.custom }}
+    {{ range .Values.structr.config.custom }}
+    {{ . -}}
+    {{ end}}
+    {{ end }}
