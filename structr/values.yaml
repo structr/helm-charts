@@ -22,3 +22,12 @@ structr:
 
   # Enter valid license or "" for community edition
   license: ""
+
+resources:
+  limits:
+    cpu: 1000m
+    memory: 4Gi
+  requests:
+    cpu: 100m
+    memory: 1Gi
+
