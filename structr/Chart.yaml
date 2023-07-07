@@ -3,4 +3,4 @@ name: structr
 description: Structr is an integrated low-code development and runtime environment.
 type: application
 version: 1.0.5
-appVersion: 4.3-SNAPSHOT
+appVersion: 5.0-rc1
