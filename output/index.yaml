@@ -2,8 +2,18 @@ apiVersion: v1
 entries:
   structr:
   - apiVersion: v2
+    appVersion: 5.0-rc1
+    created: "2023-07-21T09:37:29.520864+10:00"
+    description: Structr is an integrated low-code development and runtime environment.
+    digest: 9fa617f23f8e4236212e7dcfcb933baa5f5a49766fef9b0d6726554a70caf5d5
+    name: structr
+    type: application
+    urls:
+    - structr-5.0-rc1.tgz
+    version: 5.0-rc1
+  - apiVersion: v2
     appVersion: 5.0-SNAPSHOT
-    created: "2023-07-07T10:26:10.543282199+02:00"
+    created: "2023-07-21T09:37:29.520706+10:00"
     description: Structr is an integrated low-code development and runtime environment.
     digest: b51b9595cfd35aac6ed318bd9e10489c840a64aa308dfced398e724ece153938
     name: structr
@@ -13,7 +23,7 @@ entries:
     version: 1.0.7
   - apiVersion: v2
     appVersion: 5.0-rc1
-    created: "2023-07-07T10:26:10.54299984+02:00"
+    created: "2023-07-21T09:37:29.520423+10:00"
     description: Structr is an integrated low-code development and runtime environment.
     digest: 733967bd8e1960863d552c162a3e98ac13c006e5f6039c146455b3ed171d3eb5
     name: structr
@@ -23,7 +33,7 @@ entries:
     version: 1.0.6
   - apiVersion: v2
     appVersion: 4.3-SNAPSHOT
-    created: "2023-07-07T10:26:10.54271057+02:00"
+    created: "2023-07-21T09:37:29.52025+10:00"
     description: Structr is an integrated low-code development and runtime environment.
     digest: 3086ccfcd48dc618542a0c3df84649661226fdf3fde08f607ac7ed644451e593
     name: structr
@@ -31,4 +41,4 @@ entries:
     urls:
     - structr-1.0.5.tgz
     version: 1.0.5
-generated: "2023-07-07T10:26:10.542293624+02:00"
+generated: "2023-07-21T09:37:29.519558+10:00"

@@ -6,7 +6,6 @@ data:
   structr.conf: |
     superuser.password = {{ required "structr.config.superuserPassword is required" .Values.structr.config.superuserPassword }}
     setup.wizard.completed = true
-    application.cluster.enabled = true
     application.schema.automigration = true
     application.http.port = 80
     database.available.connections = neo4j
