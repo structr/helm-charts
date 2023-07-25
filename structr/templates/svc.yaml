@@ -4,6 +4,12 @@ metadata:
   name: {{ .Release.Name }}
   labels:
     app: {{ .Release.Name }}
+  annotations:
+    {{ if .Values.svc.annotations }}
+    {{ range .Values.svc.annotations }}
+    {{ . -}}
+    {{ end}}
+    {{ end }}
 spec:
   type: LoadBalancer
   ports:
