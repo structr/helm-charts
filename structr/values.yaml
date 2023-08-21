@@ -22,7 +22,7 @@ structr:
 
     # Add custom config entries here
     custom: [
-      # Allow Structr apps to be auto-migrated across  multiple versions
+      # Allow Structr apps to be auto-migrated across multiple versions
       "application.schema.automigration = true",
       # Enable/Disable cluster mode for Structr
       "application.cluster.enabled = false",
