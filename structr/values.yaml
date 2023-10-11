@@ -14,11 +14,16 @@ structr:
     storageClassName: "standard"
     size: 2Gi
 
+  env:
+    AGREE_TO_STRUCTR_PRIVACY_POLICY: "yes"
+
   # configure the connection to Neo4j
   config:
+    superuserPassword: "superuser"
     database: 
-      url: "bolt://neo4j:7687"
+      url: "bolt://host.minikube.internal:7687"
       username: "neo4j"
+      password: "password"
 
     # Add custom config entries here
     custom: [
@@ -33,6 +38,7 @@ structr:
   # put the contents of your license.key file here
   # please note that clustering only works with a Structr Enterprise license key
   license: ""
+  
 
 # configure resource limits according to you cluster node configuration
 resources:

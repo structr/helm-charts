@@ -48,8 +48,10 @@ spec:
               fieldPath: metadata.name
         - name: NAMESPACE
           value: {{ .Release.Namespace }}
-        - name: AGREE_TO_STRUCTR_PRIVACY_POLICY
-          value: "yes"
+        {{- range $key, $val := .Values.structr.env }}
+        - name: {{ $key }}
+          value: {{ $val | quote}}
+        {{ end }}
         volumeMounts:
         - mountPath: /var/lib/structr/bin/memory.config
           name: {{ .Release.Name }}-memory-config
