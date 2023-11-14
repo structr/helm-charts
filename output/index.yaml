@@ -2,8 +2,18 @@ apiVersion: v1
 entries:
   structr:
   - apiVersion: v2
+    appVersion: 5.0.1
+    created: "2023-11-14T07:25:27.624195+01:00"
+    description: Structr is an integrated low-code development and runtime environment.
+    digest: eade76c4a177874368a90a0cb7e4acbcb1caa84771ad718c5c855b85f8bf78d0
+    name: structr
+    type: application
+    urls:
+    - structr-5.0.1.tgz
+    version: 5.0.1
+  - apiVersion: v2
     appVersion: 5.0.0
-    created: "2023-10-12T09:40:52.189734+11:00"
+    created: "2023-11-14T07:25:27.624007+01:00"
     description: Structr is an integrated low-code development and runtime environment.
     digest: af35d65a7fc271d8e01f785340dda7b4831b78f9aba6e2d0f8b87f02bf32be14
     name: structr
@@ -13,7 +23,7 @@ entries:
     version: 5.0.0
   - apiVersion: v2
     appVersion: 5.0-SNAPSHOT
-    created: "2023-10-12T09:40:52.18951+11:00"
+    created: "2023-11-14T07:25:27.62367+01:00"
     description: Structr is an integrated low-code development and runtime environment.
     digest: b51b9595cfd35aac6ed318bd9e10489c840a64aa308dfced398e724ece153938
     name: structr
@@ -23,7 +33,7 @@ entries:
     version: 1.0.7
   - apiVersion: v2
     appVersion: 5.0-rc1
-    created: "2023-10-12T09:40:52.18921+11:00"
+    created: "2023-11-14T07:25:27.623396+01:00"
     description: Structr is an integrated low-code development and runtime environment.
     digest: 733967bd8e1960863d552c162a3e98ac13c006e5f6039c146455b3ed171d3eb5
     name: structr
@@ -33,7 +43,7 @@ entries:
     version: 1.0.6
   - apiVersion: v2
     appVersion: 4.3-SNAPSHOT
-    created: "2023-10-12T09:40:52.188881+11:00"
+    created: "2023-11-14T07:25:27.623026+01:00"
     description: Structr is an integrated low-code development and runtime environment.
     digest: 3086ccfcd48dc618542a0c3df84649661226fdf3fde08f607ac7ed644451e593
     name: structr
@@ -41,4 +51,4 @@ entries:
     urls:
     - structr-1.0.5.tgz
     version: 1.0.5
-generated: "2023-10-12T09:40:52.188224+11:00"
+generated: "2023-11-14T07:25:27.62218+01:00"

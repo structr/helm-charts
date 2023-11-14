@@ -7,4 +7,4 @@ spec:
   storageClassName: {{ .Values.structr.filesvolume.storageClassName }}
   resources:
     requests:
-      storage: 1Gi
+      storage: {{ .Values.structr.filesvolume.size }}

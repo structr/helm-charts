@@ -18,7 +18,7 @@ spec:
       serviceAccountName: {{ .Release.Name }}-jgroups-kubeping-service-account
       containers:
       - name: {{ .Release.Name }}
-        image: structr/structr:5.0.0
+        image: {{ .Values.structr.imageVersion | default "structr/structr:5.0.1"  }}
         #imagePullPolicy: Always
         ports:
         - containerPort: 80
